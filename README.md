@@ -1,5 +1,5 @@
 # Quiz
-Random Quiz Games
+Trivia Quiz Games
 
 This project was made using PHP, HTML & CSS
 
@@ -9,4 +9,4 @@ Random Page Generator
 Different type of inputs for the answers in every page:
 Text, Checkbox, Dropdown, Radio Buttons.
 
-Live at: https://sha-quiz.000webhostapp.com
+Demo: https://sha-quiz.000webhostapp.com
