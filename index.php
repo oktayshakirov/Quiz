@@ -14,21 +14,10 @@
 <tr>
 <td>
 <img src="images/quiz.png" alt="quiz" width="200px" height="70px" align="left">
-<!-- Random Quiz -->
-<?php
-$quiz_urls = [
-    "color-mixing.php",
-    "geography.php",
-    "logic.php",
-    "math.php",
-    "word-quiz.php",
-    "world-quiz.php"
-];
-$random_index = array_rand($quiz_urls);
-$random_quiz_url = $quiz_urls[$random_index];
-?>
-
-<h3 align="right">Random Trivia Games &#128293</h3>
+<!-- Typing Text Effect -->
+</td>
+<td>
+<div class="typing">Pick a random Quiz and Play &#128293</div>
 </td>
 </tr>
 </table> 
