@@ -27,7 +27,7 @@ $random_index = array_rand($quiz_urls);
 $random_quiz_url = $quiz_urls[$random_index];
 ?>
 
-<h3 align="right"><a href="<?php echo $random_quiz_url; ?>">Random Trivia Games &#128293</a></h3>
+<h3 align="right">Random Trivia Games &#128293</h3>
 </td>
 </tr>
 </table> 
@@ -222,6 +222,8 @@ $random_quiz_url = $quiz_urls[$random_index];
 <td>
 <center><p>You can find the code for this project at <a href="https://github.com/oktayshakirov/quiz">
 <img src="images/github.png" alt="github" width="100px" height="20px"></a></p>
+<center><p>Check out <a href="https://oktayshakirov.github.io/portfolio/">my portfolio</a> to see more things i builded.</p>
+</center>
 </center>
 </td>
 </tr>
