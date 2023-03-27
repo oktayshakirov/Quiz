@@ -3,6 +3,7 @@
 <head>    
 <title>QUIZ</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head> 
 <body>
 <form method="get" action="quiz.php"></form>
@@ -222,7 +223,7 @@ $random_quiz_url = $quiz_urls[$random_index];
 <td>
 <center><p>You can find the code for this project at <a href="https://github.com/oktayshakirov/quiz">
 <img src="images/github.png" alt="github" width="100px" height="20px"></a></p>
-<center><p>Check out <a href="https://oktayshakirov.github.io/portfolio/">my portfolio</a> to see more things i builded.</p>
+<center><p>Check out <a href="https://oktayshakirov.github.io/portfolio/">my portfolio</a> to see more things i builded. </p>
 </center>
 </center>
 </td>

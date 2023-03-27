@@ -3,6 +3,7 @@
 <head>
 <title>Math Quiz</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 
