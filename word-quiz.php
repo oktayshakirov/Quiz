@@ -12,12 +12,13 @@
 <tr>
 <td>
 <img src="images/quiz.png" alt="quiz" width="200px" height="70px" align="left">
-<h3 align="right">You are currently playing: Spelling &#9997</h3>
+</td>
+<td>
+<div class="typing">Your current Quiz is about: <wbr>Spelling &#9997</div>
 </td>
 </tr>
 </table> 
 <br> 
-
 
 <!-- Word Quiz -->
 <table border="1px solid black" align="center">

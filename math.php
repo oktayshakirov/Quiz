@@ -12,7 +12,9 @@
 <tr>
 <td>
 <img src="images/quiz.png" alt="quiz" width="200px" height="70px" align="left">
-<h3 align="right">You are currently playing: Math Quiz &#10135</h3>
+</td>
+<td>
+<div class="typing">Your current Quiz is about: <wbr>Math &#10135</div>
 </td>
 </tr>
 </table> 

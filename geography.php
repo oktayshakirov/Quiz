@@ -12,7 +12,9 @@
 <tr>
 <td>
 <img src="images/quiz.png" alt="quiz" width="200px" height="70px" align="left">
-<h3 align="right">You are currently playing: Geography Quiz &#128509</h3>
+</td>
+<td>
+<div class="typing">Your current Quiz is about: <wbr>Capital Cities &#128509</div>
 </td>
 </tr>
 </table> 

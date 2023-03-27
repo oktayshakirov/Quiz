@@ -13,7 +13,9 @@
 <tr>
 <td>
 <img src="images/quiz.png" alt="quiz" width="200px" height="70px" align="left">
-<h3 align="right">You are currently playing: Cinema Quiz &#127909</h3>
+</td>
+<td>
+<div class="typing">Your current Quiz is about: <wbr>Movies &#127909</div>
 </td>
 </tr>
 </table> 
