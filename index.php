@@ -180,8 +180,6 @@
 <!-- Random Quiz Generator -->
 <td>
 <center>
-<form action="<?php echo $random_quiz_url; ?>">
-<input class="shadow__btn" type="submit" value="Random Quiz">
 <?php
 $quiz_urls = [
     "color-mixing.php",
@@ -196,6 +194,8 @@ $quiz_urls = [
 $random_index = array_rand($quiz_urls);
 $random_quiz_url = $quiz_urls[$random_index];
 ?>
+<form action="<?php echo $random_quiz_url; ?>">
+    <input class="shadow__btn" type="submit" value="Random Quiz">
 </form>
 </center>
 </td>
