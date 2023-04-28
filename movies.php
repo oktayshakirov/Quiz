@@ -76,7 +76,8 @@ echo "<td>";
 $inhalt = $_POST;
 if (array_key_exists('antwort_gruppe',$inhalt)){
 echo "<p>Your answer is ". $inhalt['antwort_gruppe'] . "</p>";
-}else{
+}
+else{
 echo "<p><center>Pick Answer</center></p>";
 }
 echo "</td>";

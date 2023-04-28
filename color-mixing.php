@@ -83,7 +83,23 @@ $num_right++;
 }
 if ($num_right == 2) {
 echo "<p>Your answer is correct!</p>";
-} else {
+} 
+// Redirect to next quiz if the answer is correct
+if ($num_right === 2) {
+    echo "<p>Going to the next Quiz in <span id='countdown'>6</span> seconds ...</p>";
+    echo "<script>
+            let count = 6;
+            const countdown = setInterval(() => {
+              count--;
+              document.getElementById('countdown').textContent = count;
+              if (count === 0) {
+                clearInterval(countdown);
+                window.location.href = 'word-quiz.php';
+              }
+            }, 1000);
+          </script>";
+  }
+else {
 echo "<p>Your answer is incorrect!</p>";
 }
 } else {

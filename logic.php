@@ -77,7 +77,22 @@ $score++;
 if ($question3 == 1) {
 $score++;
 }
-echo "You got " . $score . " out of 3 correct!";
+echo "<br><br>You got " . $score . " out of 3 correct!";
+// Redirect to next quiz if the answer is correct
+if ($score == 3) {
+    echo "<p>Going to the next Quiz in <span id='countdown'>6</span> seconds ...</p>";
+    echo "<script>
+            let count = 6;
+            const countdown = setInterval(() => {
+              count--;
+              document.getElementById('countdown').textContent = count;
+              if (count === 0) {
+                clearInterval(countdown);
+                window.location.href = 'music.php';
+              }
+            }, 1000);
+          </script>";
+  }
 }
 ?>
 </center> 

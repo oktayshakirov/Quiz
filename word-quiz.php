@@ -43,8 +43,25 @@ if (isset($_POST['submit'])) {
 $word = $_POST['word'];
 $correct_word = 'retupmoc';
 if ($word === $correct_word) {
-echo '<center>The word is correct!</center>';
-} else {
+echo '<br>';
+echo 'The word is correct!';
+} 
+ // Redirect to next quiz if the answer is correct
+ if ($word === $correct_word) {
+    echo "<p>Going to the next Quiz in <span id='countdown'>6</span> seconds ...</p>";
+    echo "<script>
+            let count = 6;
+            const countdown = setInterval(() => {
+              count--;
+              document.getElementById('countdown').textContent = count;
+              if (count === 0) {
+                clearInterval(countdown);
+                window.location.href = 'math.php';
+              }
+            }, 1000);
+          </script>";
+  }
+  else {
 echo '<center>The word is incorrect!</center>';
 }
 }

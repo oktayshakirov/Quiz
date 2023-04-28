@@ -71,19 +71,36 @@
 </form>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-echo "<tr>";
-echo "<td>";
-$inhalt = $_POST;
-if (array_key_exists('antwort_gruppe',$inhalt)){
-echo "<p>Your answer is ". $inhalt['antwort_gruppe'] . "</p>";
-}else{
-echo "<p><center>Pick Answer</center></p>";
-}
-echo "</td>";
-echo "</tr>";
+  echo "<tr>";
+  echo "<td>";
+  $inhalt = $_POST;
+  if (array_key_exists('antwort_gruppe',$inhalt)){
+    $answer = $inhalt['antwort_gruppe'];
+    echo "<p>Your answer is ". $answer . "</p>";
+    // Redirect to next quiz if the answer is correct
+    if ($answer === "Right") {
+      echo "<p>Going to the next Quiz in <span id='countdown'>6</span> seconds ...</p>";
+      echo "<script>
+              let count = 6;
+              const countdown = setInterval(() => {
+                count--;
+                document.getElementById('countdown').textContent = count;
+                if (count === 0) {
+                  clearInterval(countdown);
+                  window.location.href = 'color-mixing.php';
+                }
+              }, 1000);
+            </script>";
+    }
+  } else {
+    echo "<p><center>Pick Answer</center></p>";
+  }
+  echo "</td>";
+  echo "</tr>";
 }
 ?>
 </table>
+
 
 <br>
 <!-- Buttons -->
