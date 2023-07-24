@@ -10,7 +10,9 @@ Different type of inputs in every page: Text, Checkbox, Dropdown, Radio Buttons.
 
 ![Desktop Demo](https://oktayshakirov.com/assets/images/projects/quiz.png "Desktop Demo")
 
-Also viewable [here](https://oktayshakirov.000webhostapp.com/quiz)
+<p align="center">
+  <a href="https://oktayshakirov.000webhostapp.com/quiz"><strong>➥ Live Demo</strong></a>
+</p>
 
 
 ## License
